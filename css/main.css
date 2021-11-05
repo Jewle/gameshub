@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.main-container {
+    background-image:linear-gradient(45deg,#F38FFA,#539EEE);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    animation: grad-changer 3s linear infinite;
+    /* transition: 1s; */
+}
+.main-header {
+    font-size: 100px;
+    font-weight: bold;
+    color:white;
+    transform: translateY(300px);
+    /* animation: text-float 3s linear infinite; */
+}
+.main-btn {
+    display: inline-block;
+    transform: translateY(400px);
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+   
+}
+.main-btn-img {
+}
+
+.main-btn:hover{
+    transform: scale(2) translateY(200px);
+    transition: 1s;
+    box-shadow: 0 0 10px white;
+    animation-name: pulsar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.my {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.games {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+}
+.hub {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulsar{
+    0%{
+        box-shadow: 0 0 10px pink;
+    }
+    50%{
+        box-shadow: 0 0 50px pink;
+    }
+    100%{
+        box-shadow: 0 0 10px pink;
+    }
+}
+@keyframes wave{
+    0%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-150px)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
